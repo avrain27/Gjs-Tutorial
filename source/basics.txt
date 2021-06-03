@@ -76,13 +76,13 @@ the right with the text "Hello World" and an angle of 25 degrees, use:
 
 .. code-block:: javascript
 
-    label = Gtk.Label({label="Hello World", angle=25, halign=Gtk.Align.END});
+    const label = Gtk.Label({label:"Hello World", angle:25, halign:Gtk.Align.END});
 
 which is equivalent to
 
 .. code-block:: javascript
 
-    label = new Gtk.Label();
+    const label = new Gtk.Label();
     label.set_label("Hello World");
     label.set_angle(25);
     label.set_halign(Gtk.Align.END);
@@ -91,7 +91,7 @@ Instead of using getters and setters, you can also get and set the GObject prope
 
 .. code-block:: javascript
 
-    label = new Gtk.Label();
+    const label = new Gtk.Label();
     label.label = "Hello World";
     label.angle = 25;
     label.halign = Gtk.Align.END;
